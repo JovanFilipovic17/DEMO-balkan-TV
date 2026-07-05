@@ -34,16 +34,31 @@ Keys entered in the UI take priority over the `.env`/environment values.
 
 ## Running locally
 
+This project uses [`uv`](https://docs.astral.sh/uv/) for dependency management. If you don't have it installed:
+
 ```bash
-pip install -r requirements.txt
-python main.py
+# macOS/Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows (PowerShell)
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
+
+Then, from the project root:
+
+```bash
+uv venv
+uv pip install -r requirements.txt
+uv run python main.py
+```
+
+`uv venv` creates a local `.venv`, `uv pip install` installs the dependencies into it, and `uv run` executes `main.py` inside that environment — no manual activation needed.
 
 The app starts on `http://localhost:7860` by default. Optional env vars: `APP_HOST`, `APP_PORT`, `APP_SHARE` (set to `true` for a public Gradio share link), `VERBOSE` (logs every agent call).
 
 ## Tech stack
 
-Python 3.11+, Gradio, Pydantic v2, Anthropic SDK (Claude Haiku), Plotly, Serper API.
+Python 3.11+, `uv`, Gradio, Pydantic v2, Anthropic SDK (Claude Haiku), Plotly, Serper API.
 
 ## Notes
 
