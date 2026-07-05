@@ -1,0 +1,39 @@
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# uv (keep uv.lock tracked for reproducibility — only ignore if noisy)
+.uv/
+
+# gradio
+gradio_cached_examples/
+flagged/
+
+# proprietary / non-demo documents
+MTEL MARKET RESEARCH REPORT.pdf
+MTEL-ING-EXECUTIVE SUMMARY.pdf
+
+# data/logs
+*.db
+*.sqlite
+*.sqlite3
+logs/
+*.log
+
+# os/editor
+.DS_Store
+.vscode/
+.idea/
+
+PROJECT_CONTEXT.md

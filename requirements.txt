@@ -1,0 +1,9 @@
+# Core
+pydantic[email]>=2.0
+anthropic>=0.25.0
+
+# UI
+gradio>=4.0
+
+# Utilities
+python-dotenv>=1.0       # optional: load .env file automatically
