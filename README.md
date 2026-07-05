@@ -1,3 +1,14 @@
+---
+title: Balkan TV Agentic CRM
+emoji: 📺
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 6.19.0
+app_file: main.py
+pinned: false
+---
+
 # Balkan TV — Agentic CRM
 
 Portfolio demo of an agentic CRM for an OTT/IPTV provider serving the Balkan diaspora in Turkey. Three tabs, each backed by a deterministic rule-based pipeline with optional AI enrichment via Claude.
